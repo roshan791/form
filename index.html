@@ -1,0 +1,43 @@
+<!doctype html>
+<html> 
+ <head> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 ,shrink-to-fit=no">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>form</title>
+ </head> 
+ <body> 
+        
+        
+  <form id="submit-form">
+   <h1>Details</h1> 
+   <hr> <label for="name"><b>Name</b></label> 
+   <input type="text" placeholder="Enter Your Name" name="name" required> 
+   <br> <label for="number"><b>phone No.</b></label> 
+   <input type="text" placeholder="Enter Your Phone No." name="number" required> 
+   <br> <label for="email"><b>Email</b></label> 
+   <input type="email" placeholder="Enter Your E-mail" name="email" required> 
+   <br> <label for="year"><b>Year of Study</b></label> 
+   <br> 
+   <input type="radio" id="1" name="year" value="1" required> <label for="1">1</label> 
+   <br> 
+   <input type="radio" id="2" name="year" value="2"> <label for="2">2</label> 
+   <br> 
+   <input type="radio" id="3" name="year" value="3"> <label for="3">3</label> 
+   <br> 
+   <input type="radio" id="4" name="year" value="3"> <label for="4">4</label> 
+   <hr> <button type="submit" class="submitbutton">Submit</button> 
+  </form> 
+  <script>
+    $("#submit-form").submit((e)=>{
+                alert("Form submitted successfully")
+                window.location.reload() 
+                
+        })
+    
+</script>
+
+  
+ </body>
+</html>
